@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router-dom"
 
 
 
-const MovieTrailer=(movies)=>{
+const MovieTrailer=({movies})=>{
     const {id}= useParams()
     const found =movies.find((el,i,t)=> el.id == id)
     const navigate = useNavigate()

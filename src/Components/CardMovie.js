@@ -11,7 +11,7 @@ const handleDelete=(a)=>{
         <Card style={{ width: '18rem' }}>
         <Card.Img style={{width :"280px" , height:"400px"}} variant="top" src={el.posterURL}/>
         <Card.Body>
-        <Link to={`/description/${el.id}`} ><Card.Title>{el.title}</Card.Title></Link>
+        <Link to={`/MovieTraier/${el.id}`} ><Card.Title>{el.title}</Card.Title></Link>
         <Card.Text>
             {showMore ? el.description : el.description.substring(0,30)}
             <button className={showMore ? "btnLess" : "btnMore"} onClick={()=> setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
